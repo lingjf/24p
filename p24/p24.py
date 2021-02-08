@@ -166,7 +166,7 @@ def show_answer(d, n, f, delta):
         print("")
         print("complexity", r[0]["c"])
         print("total", len(r), "solutions")
-        print("cost", delta / 1000, "seconds")
+        print("cost", delta, "seconds")
     else:
         for i, a in enumerate(r):
             if i < n:
@@ -202,7 +202,7 @@ def main():
                     if Q == "a": show_answer(result, 99999, False, delta)
                     elif Q == "b": show_answer(result, 99999, True, delta)
                     elif Q == "n": show_answer(result, 99999, True, delta)
-                    print("cost ", delta / 1000, " seconds")
+                    print("cost ", delta, " seconds")
     
             elif status == "show answer":
                 if Q == "a": show_answer(result, 99999, False, 0)
